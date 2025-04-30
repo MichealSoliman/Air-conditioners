@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .slider-slide {
+    display: none;
+  }
+  .slider-slide.active {
+    display: block;
+  }
+  .slide1{
+      background-image: url(./img/Different-Modes-in-Air-Conditioner-Fresh-Air-Gentle-Wind-I-Feel-Turbo-Sleep-Eco.jpg);
+      background-size: contain;     
+      background-position: center; 
+      background-repeat: no-repeat; 
+      width:100%:
+  }
+  .slide2{
+      background-image: url(./img/wbMY2ZSgT4btG2Gm8MxQkt1WLmYacxlsc5ZtkiT6.webp);
+      background-size: contain;     
+      background-position: center;  
+      background-repeat: no-repeat; 
+      width:100%:
+  }
+  .slide3{
+      background-image: url(./img/wbMY2ZSgT4btG2Gm8MxQkt1WLmYacxlsc5ZtkiT6\ \(1\).webp);
+      background-size: contain;     
+      background-position: center;  
+      background-repeat: no-repeat; 
+      width:100%:
+  }
