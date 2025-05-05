@@ -6,9 +6,14 @@
   <title>مكيفات جدة</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
    
@@ -16,11 +21,33 @@
 </head>
 <body class="font-sans bg-white">
   <!-- Navbar -->
+ 
+
   <nav id="mainNavbar" class="bg-blue-700 text-white shadow-md p-3 top-0 w-full z-50">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="text-2xl font-bold">مكيفات جدة</div>
+      
+      
+      <div class="flex space-x-6">
+        <a href="https://www.facebook.com" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+          <i class="fab fa-facebook-square text-2xl"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+          <i class="fab fa-twitter-square text-2xl"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+      </div>
+
+      
+      <div class="text-2xl font-bold mx-auto">
+        مكيفات جدة
+      </div>
   
-    
+      
       <ul class="hidden md:flex space-x-6 space-x-reverse text-lg">
         <li><a href="#" class="hover:text-yellow-300 transition-colors duration-300">الرئيسية</a></li>
         <li><a href="#services" class="hover:text-yellow-300 transition-colors duration-300">الخدمات</a></li>
@@ -34,7 +61,7 @@
       </div>
     </div>
   
-   
+  
     <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-blue-600 ">
       <a href="#" class="block px-4 py-2 border-b border-blue-500 hover:bg-blue-700 transition duration-300">الرئيسية</a>
       <a href="#services" class="block px-4 py-2 border-b border-blue-500 hover:bg-blue-700 transition duration-300">الخدمات</a>
@@ -46,13 +73,16 @@
   
 
   <!-- Hero Section with Slider -->
+ 
+
+
   <section class="relative  h-[90vh] overflow-hidden " data-aos="fade-up">
     <div class="relative w-full h-screen overflow-hidden">
       
       <!-- Slide 1 -->
-      <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10 slide active">
-        <img src="./img/Different-Modes-in-Air-Conditioner-Fresh-Air-Gentle-Wind-I-Feel-Turbo-Sleep-Eco.jpg"
-             class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+      <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10 slide active ">
+        <img src="./img/istockphoto-1316936446-2048x2048.jpg"
+             class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out "
              alt="Slide 1" />
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center flex-col text-white text-center px-4">
           <h1 class="text-3xl md:text-5xl font-bold mb-4">أفضل خدمات التكييف في جدة</h1>
@@ -63,7 +93,7 @@
   
       <!-- Slide 2 -->
       <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide">
-        <img src="./img/wbMY2ZSgT4btG2Gm8MxQkt1WLmYacxlsc5ZtkiT6.webp"
+        <img src="./img/istockphoto-1314253037-2048x2048.jpg"
              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
              alt="Slide 2" />
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center flex-col text-white text-center px-4">
@@ -89,6 +119,18 @@
   </section>
 
 
+    
+
+
+
+
+  
+
+ 
+  
+
+
+
 
 <!-- services Section -->
       <section id="services" class="py-16 bg-gray-100 scroll-mt-24" data-aos="fade-up">
@@ -105,6 +147,11 @@
                 <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">احجز الآن</a>
               </div>
             </div>
+
+
+
+            
+
             
             <!-- Service 2 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
@@ -226,10 +273,226 @@
         </div>
       </section>
 
+
+<!-- section projects -->
+
+<section class="py-12 bg-white" data-aos="fade-up">
+  <div class="container mx-auto px-4  w-[85%]">
+    <h2 class="text-3xl font-bold text-center mb-10">مشاريعنا</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-right">
+      <!-- كرت -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img src="./img/دي_سي_إس_مصر_اجهزة_التكييف_الكونسيلد_10.webp" alt="شبكات التكييف" class="mb-4 rounded object-cover">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">تخطيط وتوزيع شبكات - التكييف المركزي</h3>
+        <p class="text-gray-700 text-sm mb-4">
+          نحن متخصصون في تخطيط وتوزيع الشبكات ونراعي معايير التصميم العالية لضمان التهوية الجيدة وجودة الهواء لجميع المناطق المغلقة.
+        </p>
+        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">المزيد</a>
+      </div>
+
+      <!-- كرت -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img src="./img/التكييف-المخفي-وحدة-داخلية.webp" alt="الوحدات الداخلية" class="mb-4 rounded">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">تركيب الوحدات الداخلية</h3>
+        <p class="text-gray-700 text-sm mb-4">
+          لدينا خبرة كبيرة في تركيب الوحدات الداخلية وفق معايير الجودة العالية بما يضمن الأداء الأمثل وتحقيق رضا العملاء.
+        </p>
+        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">المزيد</a>
+      </div>
+
+      <!-- كرت -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img src="./img/416o7QgmIeL.jpg" alt="الوحدات الخارجية" class="mb-4 rounded">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">تركيب الوحدات الخارجية</h3>
+        <p class="text-gray-700 text-sm mb-4">
+          نحن متخصصون في تركيب الوحدات الخارجية مع الالتزام بأعلى معايير السلامة والجودة لتحقيق أفضل أداء.
+        </p>
+        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">المزيد</a>
+      </div>
+      
+      
+   
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- section image popup -->
+<section class="bg-white py-16 px-4" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">معرض التكييفات</h2>
+
+   
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+     
+      <img src="./img/istockphoto-1209440689-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+      <img src="./img/istockphoto-1257791032-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+      <img src="./img/istockphoto-1314253037-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+      <img src="./img/istockphoto-1316936446-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+      <img src="./img/istockphoto-1571804713-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+      <img src="./img/istockphoto-2209076983-2048x2048.jpg" alt="تكييف" class="cursor-pointer rounded-lg hover:scale-105 transition duration-300" onclick="openImage(this.src)">
+    </div>
+  </div>
+
+  
+  <div id="imagePopup" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+    <div class="relative max-w-3xl mx-auto">
+      <button onclick="closeImage()" class="absolute top-4  right-6 bg-black pb-2 text-white text-2xl text-black   bg-opacity-50 rounded-full px-3 py-1 hover:bg-opacity-80 transition z-50">&times;</button>
+      <img id="popupImage" src="" alt="تكبير" class="rounded-lg shadow-lg transition duration-500 scale-95 hover:scale-100">
+    </div>
+  </div>
+
+
+
+
+</section>
+
+
+
+
+<section class="max-w-6xl mx-auto py-12 px-4"data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-center text-black mb-10">خدمات مكيفات جدة</h2>
+
+  <!-- التبويبات -->
+  <div class="flex justify-center mb-8 space-x-4 space-x-reverse">
+    <button onclick="showTab('central', this)" class="tab-btn px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">التكييف المركزي</button>
+    <button onclick="showTab('indoor', this)" class="tab-btn px-5 py-2 bg-gray-200 text-gray-700 rounded hover:bg-blue-100 transition">الوحدات الداخلية</button>
+    <button onclick="showTab('outdoor', this)" class="tab-btn px-5 py-2 bg-gray-200 text-gray-700 rounded hover:bg-blue-100 transition">الوحدات الخارجية</button>
+  </div>
+
+  <!-- المحتوى -->
+  <div id="central" class="tab-content fade active bg-white rounded-lg shadow p-6 grid md:grid-cols-2 gap-6">
+    <img src="./img/chiller-with-remote-condenser.webp" alt="التكييف المركزي" class="rounded-lg shadow-md object-cover w-full h-64" />
+    <div>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">خدمة التكييف المركزي</h3>
+      <p class="text-gray-700 leading-relaxed mb-2">
+        نقدم أفضل الحلول لتوزيع وتخطيط أنظمة التكييف المركزي في المشاريع السكنية والتجارية لضمان كفاءة الطاقة وجودة التهوية.
+      </p>
+      <p class="text-gray-600 text-sm">
+        نوفر أجهزة حديثة وخبرة عالية لضمان راحة العملاء على مدار العام.
+      </p>
+    </div>
+  </div>
+
+  <div id="indoor" class="tab-content fade hidden bg-white rounded-lg shadow p-6 grid md:grid-cols-2 gap-6">
+    <img src="./img/istockphoto-1571804713-2048x2048.jpg" alt="الوحدات الداخلية" class="rounded-lg shadow-md object-cover w-full h-64" />
+    <div>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">تركيب الوحدات الداخلية</h3>
+      <p class="text-gray-700 leading-relaxed mb-2">
+        خبراءنا يقومون بتركيب الوحدات الداخلية بعناية لضمان توزيع الهواء بشكل مثالي داخل الغرف وتحقيق أفضل أداء.
+      </p>
+      <p class="text-gray-600 text-sm">
+        نستخدم معدات دقيقة ونوفر صيانة دورية حسب الطلب.
+      </p>
+    </div>
+  </div>
+
+  <div id="outdoor" class="tab-content fade hidden bg-white rounded-lg shadow p-6 grid md:grid-cols-2 gap-6">
+    <img src="./img/carousel_2.jpg" alt="الوحدات الخارجية" class="rounded-lg shadow-md object-cover w-full h-64" />
+    <div>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">تركيب الوحدات الخارجية</h3>
+      <p class="text-gray-700 leading-relaxed mb-2">
+        نضمن تركيب آمن واحترافي للوحدات الخارجية لتحقيق الكفاءة وتجنب أعطال المستقبل، مع ضمان الحفاظ على الشكل الجمالي للمبنى.
+      </p>
+      <p class="text-gray-600 text-sm">
+        نقدم أيضاً حلول تبريد مخصصة حسب المساحة والموقع.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- section  -->
+
+<section class="bg-gray-100 py-16 px-4" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">آراء عملائنا</h2>
+
+    <div class="swiper testimonialsSwiper">
+      <div class="swiper-wrapper">
+       
+        <div class="swiper-slide bg-white p-6 h-[150px]  rounded-lg shadow text-right ">
+          <p class="text-gray-600 mb-4">“خدمة ممتازة وسريعة. أنصح بالتعامل معهم!”</p>
+          <div class="flex items-center justify-end gap-3">
+            <img src="./img/happy-man-student-with-afro-hairdo-shows-white-teeth-being-good-mood-after-classes.jpg" class="w-12 h-12 rounded-full" alt="أحمد">
+            <div >
+              <h4 class="text-gray-800 font-semibold">أحمد علي</h4>
+              <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="swiper-slide bg-white p-6 h-[150px]  rounded-lg shadow text-right">
+          <p class="text-gray-600 mb-4">“جودة عالية واهتمام بالتفاصيل. شكراً للفريق.”</p>
+          <div class="flex items-center justify-end gap-3">
+            <img src="./img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" class="w-12 h-12 rounded-full" alt="منى">
+            <div>
+              <h4 class="text-gray-800 font-semibold">منى حسن</h4>
+              <div class="text-yellow-400 text-sm">⭐⭐⭐⭐☆</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="swiper-slide bg-white p-6 h-[150px]  rounded-lg shadow text-right">
+          <p class="text-gray-600 mb-4">“تعامل راقٍ وتنفيذ احترافي. أنصح بهم.”</p>
+          <div class="flex items-center justify-end gap-3">
+            <img src="./img/handsome-man-making-deal.jpg" class="w-12 h-12 rounded-full" alt="خالد">
+            <div>
+              <h4 class="text-gray-800 font-semibold">خالد عمر</h4>
+              <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="swiper-slide bg-white p-6 h-[150px]  rounded-lg shadow text-right">
+          <p class="text-gray-600 mb-4">“أفضل خدمة تلقيتها منذ فترة. شكراً!”</p>
+          <div class="flex items-center justify-end gap-3">
+            <img src="./img/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg" class="w-12 h-12 rounded-full" alt="سارة">
+            <div>
+              <h4 class="text-gray-800 font-semibold">سارة يوسف</h4>
+              <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+      
+
 <!-- contact Section -->
       <section id="contact" class="bg-gray-100 py-16 scroll-mt-24 " data-aos="fade-up">
         <div class="container mx-auto px-4 w-[85%] mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">تواصل معنا</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">تواصل معنا</h2>
       
           <div class="grid md:grid-cols-2 gap-8 items-stretch">
             
@@ -308,6 +571,9 @@
       <button id="backToTop" class="fixed bottom-5 right-5 bg-blue-700 text-white p-5  rounded-full shadow-lg hover:bg-blue-800 transition-opacity duration-300 opacity-0 z-50">
         ↑
       </button>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
 </body>

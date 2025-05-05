@@ -65,6 +65,12 @@ setInterval(() => {
 
 
 
+
+
+
+
+
+
 // scroll top 
 
   const backToTopButton = document.getElementById("backToTop");
@@ -86,6 +92,39 @@ setInterval(() => {
       behavior: "smooth"
     });
   });
+
+
+
+
+
+
+  //tabs 
+
+  function showTab(tabId, btn) {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.classList.add('hidden');
+      el.classList.remove('active');
+    });
+
+    const target = document.getElementById(tabId);
+    target.classList.remove('hidden');
+    setTimeout(() => target.classList.add('active'), 10); // لأنيماشن ناعم
+
+    // تفعيل الزر المحدد
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('bg-blue-600', 'text-white');
+      b.classList.add('bg-gray-200', 'text-gray-700');
+    });
+    btn.classList.remove('bg-gray-200', 'text-gray-700');
+    btn.classList.add('bg-blue-600', 'text-white');
+  }
+
+
+
+
+
+
+
 
 
 
@@ -111,6 +150,7 @@ setInterval(() => {
     });
   }
 
+
   
   window.addEventListener('scroll', () => {
     const section = document.getElementById('stats');
@@ -123,6 +163,63 @@ setInterval(() => {
     }
   });
 
+
+
+
+
+ 
+// swiper
+  new Swiper(".testimonialsSwiper", {
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+
+
+
+
+
+
+ 
+  // image popup
+  
+  const popup = document.getElementById('imagePopup');
+  const popupImage = document.getElementById('popupImage');
+
+  function openImage(src) {
+    popupImage.src = src;
+    popup.classList.remove('hidden');
+    setTimeout(() => popup.classList.add('opacity-100'), 10); // Smooth
+  }
+
+  function closeImage() {
+    popup.classList.remove('opacity-100');
+    setTimeout(() => {
+      popup.classList.add('hidden');
+      popupImage.src = '';
+    }, 300);
+  }
 
   
 
